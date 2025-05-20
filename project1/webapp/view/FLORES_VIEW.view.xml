@@ -4,22 +4,20 @@
         <sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" editable="true" layout="ResponsiveGridLayout" id="form0" columnsL="2">
 
             <sap.ui.layout.form:content>
-                <sap.ui.core:Title text="Survey Form" id="Form_Title"/>
-
-                <Label text="Name" id="label_name"/>
-                <Input width="500px" id="input_name" placeholder="Name"/>
-
-                <Label text="Label 2" id="label_street"/>
+                <sap.ui.core:Title id="Form_Title" text="Survey Form"/>
+                <Label id="label_name"   text="Name" />
+                <Input id="input_name"   width="500px" placeholder="Name"/>
+                <Label id="label_street" text="Label 2"/>
                 <HBox id="hbox_1">
-                    <Input width="300px" placeholder="Street" id="input_street"/>  
-                    <Text text="" width="1px" id="text_street"/>
-                    <Input width="199px" placeholder="No." id="input_no"/>
+                    <Input id="input_street" width="300px"  placeholder="Street" />  
+                    <Text  id="text_street"  width="1px"    text=""/>
+                    <Input id="input_no"     width="199px"  placeholder="No."/>
                 </HBox>
 
-                <Label text="ZIP Code/City" id="label_zip"/>
+                <Label id="label_zip" text="ZIP Code/City"/>
                 <HBox id="hbox_2">
-                    <Input width="200px" placeholder="Zip Code" id="input_zip"/>  
-                    <Text text="" width="1px" id="text_space"/>
+                    <Input id="input_zip"   width="200px"   placeholder="Zip Code"/>  
+                    <Text  id="text_space"  width="1px"     text="" />
                     <Input width="299px" placeholder="City" id="input_city"/>
                 </HBox>
 
