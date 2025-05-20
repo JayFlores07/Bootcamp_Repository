@@ -13,30 +13,27 @@
                     <Text  id="text_street"  width="1px"    text=""/>
                     <Input id="input_no"     width="199px"  placeholder="No."/>
                 </HBox>
-
                 <Label id="label_zip" text="ZIP Code/City"/>
                 <HBox id="hbox_2">
                     <Input id="input_zip"   width="200px"   placeholder="Zip Code"/>  
                     <Text  id="text_space"  width="1px"     text="" />
-                    <Input width="299px" placeholder="City" id="input_city"/>
+                    <Input id="input_city"  width="299px"   placeholder="City"/>
                 </HBox>
-
-                <Label text="Country" id="label_country"/>
-                <ComboBox width="500px" id="combo_1">
+                <Label id="label_country"   text="Country"/>
+                <ComboBox id="combo_1"      width="500px">
                     <items>
-                        <sap.ui.core:Item text="England" id="item_1" key="England"/>
-                        <sap.ui.core:Item text="Germany" id="item_2" key="Germany"/>
-                        <sap.ui.core:Item text="USA" id="item_3" key="USA"/>
-                        <sap.ui.core:Item text="Philippines" id="item_4" key="Philippines"/>
+                        <sap.ui.core:Item id="item_1"   text="England"      key="England"/>
+                        <sap.ui.core:Item id="item_2"   text="Germany"      key="Germany"/>
+                        <sap.ui.core:Item id="item_3"   text="USA"          key="USA"/>
+                        <sap.ui.core:Item id="item_4"   text="Philippines"  key="Philippines"/>
                     </items>
                 </ComboBox>
                 </sap.ui.layout.form:content>
         </sap.ui.layout.form:SimpleForm>
-
         <HBox id="hbox_3">
-            <Text text="" width="627px" id="text_space_2"/>
-            <Button width="100px" xmlns="sap.m" text="Save" id="button_save" type="Accept"/>
-            <Button width="100px" xmlns="sap.m" text="Clear" id="button_clear" type="Reject" press="onclear"/>
+            <Text id="text_space_2" width="627px" text=""/>
+            <Button id="button_save"    width="100px" xmlns="sap.m" text="Save"  type="Accept"/>
+            <Button id="button_clear"   width="100px" xmlns="sap.m" text="Clear" type="Reject" press="onclear"/>
         </HBox>
     </content>
     </Page>
